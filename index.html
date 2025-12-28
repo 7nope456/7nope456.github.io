@@ -1,208 +1,160 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Węzły logistyczne Niemiec</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      background: #111827;
-      color: #e5e7eb;
-    }
-    .slide {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 60px 20px;
-    }
-    }
-    header {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.4rem;
-    }
-    header p {
-      max-width: 900px;
-      margin: auto;
-      font-size: 1.1rem;
-    }
-    nav {
-      background: #ffffff;
-      padding: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #2a5298;
-      font-weight: bold;
-      font-size: 0.95rem;
-    }
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 0;
-    }
-    }
-    section h2 {
-      color: #1e3c72;
-      margin-bottom: 15px;
-      border-left: 5px solid #2a5298;
-      padding-left: 10px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    footer {
-      background: #1e3c72;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
-    footer p {
-      max-width: 900px;
-      margin: auto;
-      font-size: 0.95rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Węzły logistyczne Niemiec</title>
+    <style>
+        /* Reset i podstawowe style */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Nagłówek */
+        header {
+            background-color: #005f73;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Główna treść */
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            color: #0a9396;
+        }
+
+        h2 {
+            border-bottom: 2px solid #94d2bd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Listy w sekcjach */
+        section ul {
+            padding-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #0a9396;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stopka */
+        footer {
+            background-color: #001219;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Węzły logistyczne Niemiec</h1>
+        <nav>
+            <ul>
+                <li><a href="#wprowadzenie">Wprowadzenie</a></li>
+                <li><a href="#transport">Rodzaje transportu</a></li>
+                <li><a href="#wezly">Najważniejsze węzły</a></li>
+                <li><a href="#firmy">Firmy i e-commerce</a></li>
+                <li><a href="#przyszlosc">Przyszłość logistyki</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <h1>Węzły logistyczne Niemiec</h1>
-  <p>
-    Aniela Bryszewska · Sandra Bartoszewska · Bartek Fandysz · Daria Blaszke
-  </p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Germany_transport_map.png" alt="Mapa transportowa Niemiec" style="max-width:90%; margin-top:20px; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.25);">
-</header>
+    <main>
+        <section id="wprowadzenie">
+            <h2>Wprowadzenie</h2>
+            <p>Niemcy są jednym z najważniejszych krajów logistycznych na świecie. Położone w centrum Europy, stanowią punkt łączący północ z południem i wschód z zachodem kontynentu...</p>
+            <p>Logistyka to proces planowania, organizowania i kontrolowania przepływu towarów, surowców i informacji od producenta do odbiorcy.</p>
+        </section>
 
-<nav>
-  <a href="#logistyka">Logistyka</a>
-  <a href="#dlaczego">Dlaczego Niemcy?</a>
-  <a href="#transport">Transport</a>
-  <a href="#wezly">Węzły logistyczne</a>
-  <a href="#przyszlosc">Przyszłość</a>
-</nav>
+        <section id="transport">
+            <h2>Rodzaje transportu w Niemczech</h2>
+            <ul>
+                <li><strong>Drogowy:</strong> najbardziej rozpowszechniony i elastyczny.</li>
+                <li><strong>Kolejowy:</strong> do przewozu dużych ładunków.</li>
+                <li><strong>Wodny:</strong> tania alternatywa dla ciężkich towarów masowych.</li>
+                <li><strong>Lotniczy:</strong> szybki transport towarów wysokiej wartości.</li>
+            </ul>
+            <p>Najważniejsze autostrady: A1, A3, A7. Koleje: Deutsche Bahn, DB Cargo.</p>
+        </section>
 
-<section id="logistyka" class="slide">
-  <h2>Slajd 1: Czym jest logistyka?</h2>
-  <div class="card">
-    <p>
-      Logistyka to proces planowania, organizowania i kontrolowania przepływu towarów,
-      surowców oraz informacji od producenta do odbiorcy.
-    </p>
-    <p>
-      Obejmuje transport, magazynowanie, dystrybucję oraz zarządzanie łańcuchem dostaw.
-    </p>
-  </div>
-</section>
+        <section id="wezly">
+            <h2>Najważniejsze węzły logistyczne</h2>
+            <ul>
+                <li><strong>Hamburg:</strong> największy port morski Niemiec.</li>
+                <li><strong>Duisburg:</strong> największy port rzeczny świata.</li>
+                <li><strong>Frankfurt am Main:</strong> hub lotniczy i drogowy.</li>
+                <li><strong>Leipzig/Halle:</strong> centrum logistyczne DHL.</li>
+                <li><strong>Bremen i Bremerhaven:</strong> węzły morskie.</li>
+                <li><strong>Monachium, Norymberga, Stuttgart:</strong> centra logistyczne południowych Niemiec.</li>
+            </ul>
+        </section>
 
-<section id="dlaczego" class="slide">
-  <h2>Slajd 2: Dlaczego Niemcy są krajem logistycznym?</h2>
-  <div class="card">
-    <ul>
-      <li>Położenie w centrum Europy</li>
-      <li>Rozwinięta infrastruktura transportowa</li>
-      <li>Największa gospodarka UE</li>
-      <li>Silny przemysł eksportowy</li>
-      <li>Globalne firmy logistyczne</li>
-    </ul>
-  </div>
-</section>
+        <section id="firmy">
+            <h2>Firmy logistyczne i e-commerce</h2>
+            <p>Najważniejsze firmy: DHL, DB Schenker, Kuehne + Nagel, Dachser. E-commerce: Amazon, Zalando – centra dystrybucji 24h.</p>
+        </section>
 
-<section id="transport" class="slide">
-  <h2>Slajd 3: Rodzaje transportu w Niemczech</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>🚛 Drogowy</h3>
-      <p>Elastyczny i najszybszy w dystrybucji krajowej.</p>
-    </div>
-    <div class="card">
-      <h3>🚆 Kolejowy</h3>
-      <p>Ekologiczny transport dużych ładunków.</p>
-    </div>
-    <div class="card">
-      <h3>🚢 Wodny</h3>
-      <p>Tani przewóz surowców masowych.</p>
-    </div>
-    <div class="card">
-      <h3>✈️ Lotniczy</h3>
-      <p>Szybkie przesyłki o wysokiej wartości.</p>
-    </div>
-  </div>
-</section>
+        <section id="przyszlosc">
+            <h2>Przyszłość logistyki w Niemczech</h2>
+            <ul>
+                <li>Automatyzacja i cyfryzacja magazynów.</li>
+                <li>Zrównoważony rozwój i transport ekologiczny.</li>
+                <li>Transport intermodalny – łączenie kolej, ciężarówki, statki.</li>
+                <li>Nowe inwestycje w infrastrukturę i centra logistyczne.</li>
+            </ul>
+        </section>
+    </main>
 
-<section id="wezly">
-  <h2>Najważniejsze węzły logistyczne</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Hamburg_port.jpg" alt="Port Hamburg" style="width:100%; border-radius:10px; margin-bottom:10px;">
-      <h3>Hamburg</h3>
-      <p>Największy port morski Niemiec i jeden z największych w Europie.</p>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Duisburg_inner_harbour.jpg" alt="Port Duisburg" style="width:100%; border-radius:10px; margin-bottom:10px;">
-      <h3>Duisburg</h3>
-      <p>Największy port rzeczny świata, ważny punkt Nowego Jedwabnego Szlaku.</p>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Frankfurt_Airport_Aerial.jpg" alt="Lotnisko Frankfurt" style="width:100%; border-radius:10px; margin-bottom:10px;">
-      <h3>Frankfurt nad Menem</h3>
-      <p>Największy hub lotniczy i ważne centrum drogowo-kolejowe.</p>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Leipzig_Halle_Airport_cargo.jpg" alt="Lotnisko Leipzig Halle" style="width:100%; border-radius:10px; margin-bottom:10px;">
-      <h3>Leipzig/Halle</h3>
-      <p>Główna europejska baza DHL Express, działająca 24/7.</p>
-    </div>
-  </div>
-</section>
-
-<section id="przyszlosc" class="slide">
-  <h2>Slajd końcowy: Przyszłość logistyki</h2>
-  <div class="card">
-    <p>
-      Przyszłość logistyki w Niemczech opiera się na automatyzacji,
-      cyfryzacji i zrównoważonym rozwoju.
-    </p>
-    <p>
-      Transport intermodalny i zielona logistyka będą kluczowe.
-    </p>
-  </div>
-</section>
-
-<footer>
-  <p>
-    Niemcy to europejski lider w logistyce – wzór organizacji transportu i zarządzania
-    łańcuchem dostaw.
-  </p>
-  <p>Dziękujemy za uwagę.</p>
-</footer>
-
+    <footer>
+        <p>Źródła i bibliografia dostępne w prezentacji. Dziękujemy za uwagę.</p>
+    </footer>
 </body>
 </html>
